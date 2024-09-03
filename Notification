@@ -110,11 +110,7 @@ function Notification.NormalNotification(conpigs)
 	Hide.Size = UDim2.new(0, 20, 0, 20)
 	Hide.Image = "rbxassetid://7733717755"
 	Hide.Visible = false
-	
-	sound.SoundId = conpigs.SoundID
-	sound.Parent = game:GetService("Workspace")
-	sound:Play()
-	
+
 	game:GetService("TweenService"):Create(NormalNofitication,TweenInfo.new(0.15,Enum.EasingStyle.Quad),{Size = UDim2.new(0, 330, 0, 120)}):Play()
 	task.wait(0.25)
 	NormalNofitication.Visible = true
@@ -267,10 +263,6 @@ function Notification.ReplyNofitication(conpigs) -- or you can call it TextboxNo
 	TextButton.Text = "Send"
 	TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 	TextButton.TextSize = 18.000
-	
-	sound.SoundId = conpigs.SoundID
-	sound.Parent = game:GetService("Workspace")
-	sound:Play()
 	
 	game:GetService("TweenService"):Create(TextboxNofitication,TweenInfo.new(0.15,Enum.EasingStyle.Quad),{Size = UDim2.new(0, 330, 0, 120)}):Play()
 	task.wait(0.25)
