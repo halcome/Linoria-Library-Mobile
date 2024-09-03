@@ -149,13 +149,13 @@ function Notification.NormalNotification(conpigs)
 	end)
 end
 
-function mewing10.ReplyNofitication(conpigs) -- or you can call it TextboxNofitication
-	conpigs.Title = conpigs.Title or "Mom"
+function Notification.ReplyNofitication(conpigs) -- or you can call it TextboxNofitication
+	conpigs.Title = conpigs.Title or "Notification"
 	conpigs.Description = conpigs.Description or "why are you so ugly?"
 	conpigs.ImagesID = conpigs.ImagesID or "http://www.roblox.com/asset/?id=14154109741"
 	conpigs.SoundID = conpigs.SoundID or ""
 	conpigs.PlaceholderText = conpigs.PlaceholderText or "Type a reply"
-	conpigs.SendCallback = conpigs.SendCallback or function() print("kys mom") end
+	conpigs.SendCallback = conpigs.SendCallback or function() print("Notification") end
 	
 	local TextboxNofitication = Instance.new("Frame")
 	local Image_2 = Instance.new("ImageLabel")
@@ -266,7 +266,7 @@ function mewing10.ReplyNofitication(conpigs) -- or you can call it TextboxNofiti
 	TextButton.Font = Enum.Font.SourceSans
 	TextButton.Text = "Send"
 	TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-	TextButton.TextSize = 14.000
+	TextButton.TextSize = 18.000
 	
 	sound.SoundId = conpigs.SoundID
 	sound.Parent = game:GetService("Workspace")
