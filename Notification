@@ -30,8 +30,8 @@ CloseFrame.BorderSizePixel = 0
 CloseFrame.Position = UDim2.new(0.65, 0, 0.65, 0)
 CloseFrame.Size = UDim2.new(0.33, 0, 0.3, 0)
 
-local mewing10 = {}
-function mewing10.NormalNotification(conpigs)
+local Notification = {}
+function Notification.NormalNotification(conpigs)
 	conpigs = conpigs or {}
 	conpigs.Title = conpigs.Title or "Mom"
 	conpigs.Description = conpigs.Description or "why are you so ugly?"
@@ -240,7 +240,7 @@ function mewing10.ReplyNofitication(conpigs) -- or you can call it TextboxNofiti
 	TextBox.PlaceholderText = conpigs.PlaceholderText
 	TextBox.Text = ""
 	TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
-	TextBox.TextSize = 14.000
+	TextBox.TextSize = 18.000
 	TextBox.TextWrapped = true
 	TextBox.ClearTextOnFocus = false
 	TextBox.TextXAlignment = Enum.TextXAlignment.Left
@@ -294,4 +294,4 @@ function mewing10.ReplyNofitication(conpigs) -- or you can call it TextboxNofiti
 		conpigs.SendCallback(TextBox.Text)
 	end)
 end
-return mewing10
+return Notification
