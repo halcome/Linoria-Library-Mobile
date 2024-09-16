@@ -63,7 +63,7 @@ local Library = {
 	DevicePlatform = Enum.Platform.None;
 	CanDrag = true;
 	CantDragForced = false;
-	ShowCustomCursor = false; 
+	ShowCustomCursor = true; 
 	VideoLink = "";
 	TotalTabs = 0;
 };
