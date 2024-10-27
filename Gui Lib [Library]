@@ -15,7 +15,7 @@ local GetHUI = gethui or (function() return CoreGui end);
 local IsKrampus = ((identifyexecutor or (function() return "" end))():lower() == "krampus");
 
 local ScreenGui = Instance.new('ScreenGui');
-ScreenGui.Name = "BlackkingGui";
+ScreenGui.Name = "nuhuh";
 ProtectGui(ScreenGui);
 
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global;
@@ -47,7 +47,7 @@ local Library = {
 	RiskColor = Color3.fromRGB(255, 50, 50),
 
 	Black = Color3.new(0, 0, 0);
-	Font = Enum.Font.Code,
+	Font = Enum.Font.Gotham,
 
 	OpenedFrames = {};
 	DependencyBoxes = {};
