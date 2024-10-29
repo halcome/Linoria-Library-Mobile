@@ -58,7 +58,7 @@ local Library = {
 	ActiveTab = nil;
 	Toggled = false;
 	
-	MinSize = Vector2.new(550, 300);
+	MinSize = Vector2.new(450, 150);
 	IsMobile = false;
 	DevicePlatform = Enum.Platform.None;
 	CanDrag = true;
