@@ -47,7 +47,7 @@ local Library = {
 	RiskColor = Color3.fromRGB(30, 30, 30, 255),
 
 	Black = Color3.new(0, 0, 0);
-	Font = Enum.Font.Cartoon,
+	Font = Enum.Font.Code,
 
 	OpenedFrames = {};
 	DependencyBoxes = {};
@@ -58,7 +58,7 @@ local Library = {
 	ActiveTab = nil;
 	Toggled = false;
 	
-	MinSize = Vector2.new(250, 150);
+	MinSize = Vector2.new(200, 100);
 	IsMobile = false;
 	DevicePlatform = Enum.Platform.None;
 	CanDrag = true;
